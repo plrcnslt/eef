@@ -34,6 +34,7 @@ import CompanyProfile from './pages/CompanyProfile';
 import Tenders from './pages/Tenders';
 import Contracts from './pages/Contracts';
 import ContractsEnhanced from './pages/ContractsEnhanced';
+import ContractDetails from './pages/ContractDetails';
 import ComplianceVault from './pages/ComplianceVault';
 import MilestoneVerification from './pages/MilestoneVerification';
 import ProfessionalDirectory from './pages/ProfessionalDirectory';
@@ -270,7 +271,7 @@ function App() {
           path="/contracts/:contractId"
           element={
             <ContractorProtectedRoute>
-              <MilestoneVerification />
+              <ContractDetails />
             </ContractorProtectedRoute>
           }
         />
